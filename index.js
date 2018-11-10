@@ -88,7 +88,7 @@ function createRock(x) {
      * we should call endGame()
      */
     else if (rock.style.top > 380){
-      
+      rock.style.top = `${top += 2}px`
     }
     /**
      * Otherwise, if the rock hasn't reached the bottom of
