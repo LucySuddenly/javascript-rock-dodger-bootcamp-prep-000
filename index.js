@@ -86,7 +86,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-    else if (rock.style.top < 380){
+    if (rock.style.top < 380){
     window.requestAnimationFrame(moveRock)
     }
     window.requestAnimationFrame(moveRock)
