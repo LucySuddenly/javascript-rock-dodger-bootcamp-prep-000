@@ -88,10 +88,12 @@ function createRock(x) {
      */
     if (rock.style.top < 380){
     window.requestAnimationFrame(moveRock)
+    } else {
+      rock.remove()
+      
     }
-    else {rock.remove()}
-    window.requestAnimationFrame(moveRock)
-    return rock
+    
+    
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
@@ -107,6 +109,7 @@ function createRock(x) {
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
+  window.requestAnimationFrame(moveRock)
   ROCKS.push(rock)
 
   // Finally, return the rock element you've created
