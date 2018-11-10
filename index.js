@@ -89,6 +89,7 @@ function createRock(x) {
     if (rock.style.top < 380){
     window.requestAnimationFrame(moveRock)
     }
+    else {rock.remove()}
     window.requestAnimationFrame(moveRock)
     return rock
     /**
